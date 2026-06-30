@@ -1,14 +1,14 @@
 <<<<<<< HEAD
-name: ProjectDozGROM-Builder Sixteen.
+name: Tool UI8/8.5.
 =======
-name: ProjectDozG Tools Sixteen.
+name: Tool UI8/8.5.
 >>>>>>> 468bd4a95e6adcf2d05b4b7ecfd4b6694ea3fc64
 
 on:
   workflow_dispatch:
     inputs:
       STOCK_DEVICE:
-        description: "STOCK_DEVICE_MODEL or None"
+        description: "Your Device Model"
         required: true
         default: "SM-A127F"
       TARGET_DEVICE:
@@ -24,11 +24,11 @@ on:
         required: true
         default: "354818848266026"
       OUTPUT_FILESYSTEM:
-        description: "OUTPUT_FILESYSTEM. e.g erofs / ext4 / f2fs"
+        description: "Prefer FS: erofs / ext4 / f2fs"
         required: true
         default: "erofs"
       COMPRESS_IMG_TO_XZ:
-        description: "Compress IMG to XZ (True/False)"
+        description: "Compress .img to .img.XZ (True/False)"
         required: true
         default: "False"
 
