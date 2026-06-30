@@ -61,12 +61,7 @@ PATCH_BT_LIB "$FIRM_DIR/$TARGET_DEVICE" "$WORK_DIR"
 
 B_ID="$(grep -m1 '^ro.system.build.id=' "$FIRM_DIR/$TARGET_DEVICE/system/system/build.prop" | cut -d= -f2 | tr -d '\r')"
 B_V="$(grep -m1 '^ro.system.build.version.incremental=' "$FIRM_DIR/$TARGET_DEVICE/system/system/build.prop" | cut -d= -f2 | tr -d '\r')"
-<<<<<<< HEAD
-BUILD_PROP "$FIRM_DIR/$TARGET_DEVICE" "system" "ro.build.display.id" "ProjectDozG Unoffical-N/A                    ${B_ID} ${B_V}"
-BUILD_PROP "$FIRM_DIR/$TARGET_DEVICE" "product" "ro.build.display.id" "ProjectDozG Unoffical-N/A                    ${B_ID} ${B_V}"
-=======
-BUILD_PROP "$FIRM_DIR/$TARGET_DEVICE" "system" "ro.build.display.id" "ProjectDozG Unsigned                 ${B_ID} ${B_V} "
-BUILD_PROP "$FIRM_DIR/$TARGET_DEVICE" "product" "ro.build.display.id" "ProjectDozG Unsigned                 ${B_ID} ${B_V} "
->>>>>>> 468bd4a95e6adcf2d05b4b7ecfd4b6694ea3fc64
+BUILD_PROP "$FIRM_DIR/$TARGET_DEVICE" "system" "ro.build.display.id" "ProjectDozG Unsigned                          ${B_ID} ${B_V} "
+BUILD_PROP "$FIRM_DIR/$TARGET_DEVICE" "product" "ro.build.display.id" "ProjectDozG Unsigned                          ${B_ID} ${B_V} "
 
 BUILD_IMG "$FIRM_DIR/$TARGET_DEVICE" "all" "$OUTPUT_FILESYSTEM" "$OUT_DIR"
