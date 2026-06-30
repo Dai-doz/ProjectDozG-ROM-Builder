@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 name: Tool UI8/8.5.
-=======
-name: Tool UI8/8.5.
->>>>>>> 468bd4a95e6adcf2d05b4b7ecfd4b6694ea3fc64
 
 on:
   workflow_dispatch:
